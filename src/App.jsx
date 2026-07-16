@@ -16,8 +16,6 @@ import UserList from "./dashboard/UserList.jsx"
 import AddProduct from "./dashboard/AddProduct.jsx"
 import "./App.css"
 export default function App() {
-  console.log("hello")
-  console.log("dfgsfv")
   return (
     <div className="w-100 vh-100 d-flex flex-column ">
       <BrowserRouter>
@@ -25,7 +23,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />}> </Route>
           <Route path="/about" element={<About />}> </Route>
-          <Route path="/todo" element={<Todo />}> </Route>
+          <Route path="/todo" element={<ProtectedRoute><Todo />  </ProtectedRoute>}> </Route>
           <Route path="/login" element={<Login />}> </Route>
           <Route path="/contact" element={<Contact />}> </Route>
           <Route path="/dashboard" element={<ProtectedRoute> <Dashboard /> </ProtectedRoute>}>

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { useNavigate, Navigate } from "react-router-dom"
+import { useNavigate, Navigate } from "react-router-dom";
+import HOC from "../HOC"
 function Login() {
     let [isLogin, setIsLogin] = useState(false)
     let nav = useNavigate();//hook from reactrouterdom which is used to redirect from one page to another page 
@@ -34,4 +35,4 @@ function Login() {
     )
 }
 
-export default Login;
+export default HOC(Login);

@@ -2,7 +2,7 @@ import axios from "axios";
 import { useCustomhook } from "../hooks/useCustomhook.js"
 export default function About() {
   let api = "https://dummyjson.com/products";
-let { loading, setloading } = useCustomhook(2000)
+  let { loading, setloading } = useCustomhook(2000)
   // getdata  ,using async await
   let getdata = async () => {
     try {
@@ -12,7 +12,6 @@ let { loading, setloading } = useCustomhook(2000)
       console.log(error)
     }
   }
-
   let addData = async () => {
     try {
       let newproduct = await axios.post("https://dummyjson.com/products/add", { name: "raj", age: 99 });
@@ -40,16 +39,16 @@ let { loading, setloading } = useCustomhook(2000)
 
   return (
     <>
-{
-  loading? <div className="w-100 vh-100 d-flex justify-content-center align-items-center"> <div className="loader"> </div> </div> :<div className="container-fluid h-100 m-auto p-5  text-center bg-info ">
-      <h1>About</h1>
-      <p>This is the About page.</p>
-      <button onClick={getdata}>Getdata</button>
-      <button onClick={addData}>AddData</button>
-      <button onClick={updateData}>updateData</button>
-      <button onClick={deleteData}>deleteData</button>
-    </div>
-}
+      {
+        loading ? <div className="w-100 vh-100 d-flex justify-content-center align-items-center"> <div className="loader"> </div> </div> : <div className="container-fluid h-100 m-auto p-5  text-center bg-info ">
+          <h1>About</h1>
+          <p>This is the About page.</p>
+          <button onClick={getdata}>Getdata</button>
+          <button onClick={addData}>AddData</button>
+          <button onClick={updateData}>updateData</button>
+          <button onClick={deleteData}>deleteData</button>
+        </div>
+      }
     </>
   )
 }
@@ -65,3 +64,4 @@ let { loading, setloading } = useCustomhook(2000)
 // routing
 // axios
 // custom hook :- create a file which name is start with use
+// hoc:- higher order component

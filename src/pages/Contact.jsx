@@ -1,4 +1,6 @@
-export default function Contact() {
+import HOC from "../HOC"
+
+ function Contact() {
   return (
     <div className="container-fluid h-100 m-auto p-5   bg-primary text-center ">
       <h1>Contact</h1>
@@ -6,3 +8,4 @@ export default function Contact() {
     </div>
   )
 }
+export default HOC(Contact)

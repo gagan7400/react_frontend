@@ -37,4 +37,10 @@ export default function App() {
       </BrowserRouter>
     </div>
   )
-} 
+}
+
+// state management library
+
+// we can store the state in seprate store file
+// npm i redux // offical library
+// npm i react-redux //binding for redux 

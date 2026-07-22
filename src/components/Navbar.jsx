@@ -10,12 +10,7 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
 
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <button onClick={() => { nav(-1) }}>back</button>
-            </li>
-            <li className="nav-item">
-              <button onClick={() => { nav(1) }}>forward</button>
-            </li>
+           
             <li className="nav-item">
               <NavLink className="nav-link" to="/"> Home </NavLink>
             </li>

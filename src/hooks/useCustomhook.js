@@ -4,7 +4,7 @@ export function useCustomhook(timer = 1000) {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, timer)
+        }, timer);
     }, []);
     return { loading, setLoading }
 }

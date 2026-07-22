@@ -65,3 +65,4 @@ export default function About() {
 // axios
 // custom hook :- create a file which name is start with use
 // hoc:- higher order component
+// redux

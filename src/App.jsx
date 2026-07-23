@@ -8,6 +8,8 @@ import Contact from "./pages/Contact.jsx"
 import Todo from "./pages/Todo.jsx"
 import ProtectedRoute from "./pages/ProtectedRoute.jsx"
 import Login from "./pages/Login.jsx"
+import Users from "./pages/Users.jsx"
+import Register from "./pages/Register.jsx"
 import Navbar from "./components/Navbar.jsx"
 import Footer from "./components/Footer.jsx"
 import Dashboard from "./dashboard/Dashboard.jsx"
@@ -25,6 +27,8 @@ export default function App() {
           <Route path="/about" element={<About />}> </Route>
           <Route path="/todo" element={<ProtectedRoute><Todo />  </ProtectedRoute>}> </Route>
           <Route path="/login" element={<Login />}> </Route>
+          <Route path="/register" element={<Register />}> </Route>
+          <Route path="/users" element={<Users />}> </Route>
           <Route path="/contact" element={<Contact />}> </Route>
           <Route path="/dashboard" element={<ProtectedRoute> <Dashboard /> </ProtectedRoute>}>
             <Route path="/dashboard/" element={<DashboardComp />}> </Route>

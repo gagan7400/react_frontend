@@ -10,7 +10,7 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
 
           <ul className="navbar-nav ms-auto">
-           
+
             <li className="nav-item">
               <NavLink className="nav-link" to="/"> Home </NavLink>
             </li>
@@ -27,7 +27,13 @@ function Navbar() {
               <NavLink className="nav-link" to="/dashboard" > Dashboard </NavLink>
             </li>
             <li className="nav-item">
+              <NavLink className="nav-link" to="/users" > Users </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/login" > Login </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/register" > Register </NavLink>
             </li>
           </ul>
         </div>

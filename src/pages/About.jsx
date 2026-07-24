@@ -58,11 +58,11 @@ export default function About() {
 // props
 // state
 // controlled , uncontrolled
-// hooks,state,effect,ref, callback ,
+// hooks,state,effect,ref, callback ,custom hook :- create a file which name is start with use
 // context api
 // memo (optimization)
 // routing
 // axios
-// custom hook :- create a file which name is start with use
 // hoc:- higher order component
-// redux
+// redux ,redux thunk
+// ui libraries :- bootstrap , tailwindcss ,material ui

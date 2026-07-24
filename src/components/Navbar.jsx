@@ -3,16 +3,16 @@ import { NavLink, Link, useNavigate } from 'react-router-dom';
 function Navbar() {
   let nav = useNavigate()
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-      <div className="container">
+    <nav className="p-10 border border-black w-full">
+      <div className="container  flex gap-10">
         <NavLink className="navbar-brand fw-bold" to="/"> MySite </NavLink>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className=" flex gap-10" id="navbarNav">
 
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto  flex gap-10">
 
             <li className="nav-item">
-              <NavLink className="nav-link" to="/"> Home </NavLink>
+              <NavLink className="nav-link text-black" to="/"> Home </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/about" > About </NavLink>

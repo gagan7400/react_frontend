@@ -1,5 +1,5 @@
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+// import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+// import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home.jsx"
 import About from "./pages/About.jsx"
@@ -19,7 +19,7 @@ import AddProduct from "./dashboard/AddProduct.jsx"
 import "./App.css"
 export default function App() {
   return (
-    <div className="w-100 vh-100 d-flex flex-column ">
+    <div className="w-full h-full d-flex flex-column ">
       <BrowserRouter>
         <Navbar />
         <Routes>

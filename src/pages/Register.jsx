@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux"
 import { useNavigate, Navigate } from "react-router-dom";
+import { adduser, thunkaction } from "../redux/actions/userAction"
 import HOC from "../HOC";
 function Register() {
     let dispatch = useDispatch();
@@ -10,8 +11,9 @@ function Register() {
         let email = e.target.email.value
         let name = e.target.name.value
         let password = e.target.password.value
-        console.log(name, email, password)
-        dispatch({ type: "ADDUSER", payload: { id: crypto.randomUUID(), name, email, password } })
+        let newuser = { id: crypto.randomUUID(), name, email, password }
+        dispatch(adduser(newuser))
+        // dispatch(thunkaction())
     }
     return (
         <div>
